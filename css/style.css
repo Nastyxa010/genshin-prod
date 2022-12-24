@@ -1,0 +1,137 @@
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header {
+    background-color: #5e9c31;
+	position: fixed;
+    top: 0px;
+	left: 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav a{
+    display: inline-block;
+	margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0c3300;
+    background-color: #8cff66;
+    padding: 10px;
+    border-radius: 20px;
+	transition: 0.3s border-radius linear;
+}
+
+nav a:hover {
+    border-radius: 0px;
+	
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		justify-content: space-around;
+	}
+	.logo {
+		display: none;
+	}
+	nav {
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}	
+	.main-img {
+		width: 100%;
+	}
+}
+
+.main, .section, .footer {
+	margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+	.section, .footer {
+		margin-top: 40px;
+	}
+}
+
+footer p{
+    background-color: #5e9c31;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p img {
+    border-radius: 20px;
+}
+
+.person-img {
+    float: left;
+    margin-right: 25px;
+}
+
+.person-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.person-item img {
+    width: 300px;
+    height: auto;
+}
+
+.person-item a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.person-item a:hover {
+    color: #5e9c31;
+}
+
+#game a:focus {
+    text-decoration: none;
+}
+
+.person::after {
+    content: url("../img/sword.png");
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+@media screen and (max-width: 575px) {
+	.person-img {
+		float: none;
+		margin-right: 0px;
+		width: 100%;
+	}
+}
+
+.name::before {
+    content: url("../img/id.png");
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 21px;
+    height: 21px;
+}
+
+.video-frame {
+    width: 100%;
+    height: 550px;
+}
+
+@media screen and (max-width: 575px) {
+    .video-frame {
+     height: auto
+}
+   }
